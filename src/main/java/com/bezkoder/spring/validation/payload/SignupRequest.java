@@ -7,6 +7,8 @@ import org.springframework.format.annotation.DateTimeFormat;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
 
+// comment added for dto
+
 public class SignupRequest {
 
   @NotBlank(message = "The username is required.")
