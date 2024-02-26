@@ -93,4 +93,14 @@ public class SignupRequest {
     this.address = address;
   }
 
+  public SignupRequest(String username, String email, int age, Date graduationDate, String password, String confirmPassword, AddressDTO address) {
+    this.username = username;
+    this.email = email;
+    this.age = age;
+    this.graduationDate = graduationDate;
+    this.password = password;
+    this.confirmPassword = confirmPassword;
+    this.address = address;
+  }
+
 }
