@@ -37,6 +37,10 @@ public class SignupRequest {
   @NotNull(message = "The address is required.")
   private AddressDTO address;
 
+  @Valid
+  @NotNull(message = "The address is required.")
+  private AddressDTO address1;
+
   public String getUsername() {
     return username;
   }
@@ -93,7 +97,7 @@ public class SignupRequest {
     this.address = address;
   }
 
-  public SignupRequest(String username, String email, int age, Date graduationDate, String password, String confirmPassword, AddressDTO address) {
+  public SignupRequest(String username, String email, int age, Date graduationDate, String password, String confirmPassword, AddressDTO address,AddressDTO address1) {
     this.username = username;
     this.email = email;
     this.age = age;
@@ -101,6 +105,7 @@ public class SignupRequest {
     this.password = password;
     this.confirmPassword = confirmPassword;
     this.address = address;
+    this.address1 = address1;
   }
 
 }
